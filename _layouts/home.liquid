@@ -2,17 +2,20 @@
 layout: default
 ---
 <header>
-  <h1>{{ site.title }}</h1>
-  <p>{{ site.description }}</p>
+  <div>
+    <img src="{{ site.baseurl }}/assets/images/Michelle-Blanchette.jpg" alt="" />
+  </div>
+  <div>
+    <h1>{{ site.title }}</h1>
+    <p style="margin:0;font-family:monospace;font-size:0.8em;">
+      <a href="https://github.com/MichelleBlanchette">github</a>
+      <span>//</span>
+      <a href="https://www.linkedin.com/in/michelle-blanchette/">linkedin</a>
+    </p>
+    <p>logging some of the solutions I've delivered as a full-stack web developer</p>
+  </div>
 </header>
 
 {% include post_list.liquid -%}
 
 {{ content }}
-
-<div>
-  <hr />
-  <p style="text-align: center">
-    <a href="https://github.com/MichelleBlanchette">github</a>
-  </p>
-</div>

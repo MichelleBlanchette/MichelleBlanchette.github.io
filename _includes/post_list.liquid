@@ -1,10 +1,18 @@
 {%- if site.posts.size > 0 -%}
-  <ul class="postList">
+  <ul class="post-list">
+    <li>
+      <span>{{- "2025-07-27" | date: "%Y %b %d" -}}</span>
+      <span style="border-left-style:dashed;"><em>migration underway&mdash;more content coming soon</em></span>
+    </li>
     {%- for post in site.posts -%}
         <li>
-          <span>{{- post.date | date: "%Y-%m" -}}</span>
+          <span>{{- post.date | date: "%Y %b %d" -}}</span>
           <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
         </li>
     {%- endfor -%}
+    <li>
+      <span>{{- "2017-01-01" | date: "%Y %b %d" -}}</span>
+      <span style="border-left-style:dashed;"><em>started working as a web developer</em></span>
+    </li>
   </ul>
 {%- endif -%}

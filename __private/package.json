@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "fetch": "ts-node download-wp-posts.ts"
+  },
+  "dependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2"
+  }
+}

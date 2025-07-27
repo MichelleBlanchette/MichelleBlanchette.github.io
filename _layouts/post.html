@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article>
+  <div class="post-header">
+    {% include home_link.html %}
+    <time datetime="{{ page.date }}">{{ page.date | date: "%A, %B %d, %Y" }}</time>
+  </div>
+
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+</article>
+
+<br />
+
+{% include home_link.html %}

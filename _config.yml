@@ -25,6 +25,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 favicon: "favicon.png" # name+extension of favicon (which must be put on the root folder)
 
+permalink: /:year/:month/:slug/
+
 # Build settings
 plugins:
   - jekyll-feed

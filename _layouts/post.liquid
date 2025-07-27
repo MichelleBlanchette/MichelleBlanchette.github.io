@@ -4,7 +4,7 @@ layout: default
 
 <article>
   <div class="post-header">
-    {% include home_link.html %}
+    {% include home_link.liquid %}
     <time datetime="{{ page.date }}">{{ page.date | date: "%A, %B %d, %Y" }}</time>
   </div>
 
@@ -15,4 +15,4 @@ layout: default
 
 <br />
 
-{% include home_link.html %}
+{% include home_link.liquid %}

@@ -3,9 +3,10 @@ layout: default
 ---
 
 <article>
-  <p class="post-meta">
-    <time datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-  </p>
+  <div class="post-header">
+    {% include back_link.html %}
+    <time datetime="{{ page.date }}">{{ page.date | date: "%A, %B %d, %Y" }}</time>
+  </div>
 
   <h1>{{ page.title }}</h1>
 

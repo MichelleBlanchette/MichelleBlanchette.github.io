@@ -1,14 +1,14 @@
-title: riggraz
-email: riccardo.graziosi97@gmail.com
-description: "thoughts on programming, digital wellbeing, ai"
+title: "Michelle Blanchette"
+email: "michelle@purpleturtlecreative.com"
+description: "tracking business impacts of my work as a full-stack web developer"
 baseurl: ""
-url: "https://riggraz.dev"
-github_username: riggraz
+url: "https://MichelleBlanchette.github.io"
+github_username: MichelleBlanchette
 
 permalink: /:slug.html
 
 favicon: "favicon.png"
-goat_counter: "riggraz" # put your GoatCounter name if you want to use GoatCounter analytics
+goat_counter: "" # put your GoatCounter name if you want to use GoatCounter analytics
 
 # Build settings
 remote_theme: riggraz/no-style-please

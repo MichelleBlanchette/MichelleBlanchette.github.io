@@ -26,10 +26,8 @@
           line-height: 1.6em;
         }
 
-        hr {
-          &:before { content: '/ / / ' }
-          &:after { content: attr(data-content) ' / / /' }
-        }
+        hr:before { content: '/ / / ' }
+        hr:after { content: attr(data-content) ' / / /' }
 
         header { text-align: center; }
 

@@ -35,10 +35,21 @@ a:hover,
 a:focus,
 a:visited {
   color: blue;
+  text-underline-offset: 2px;
+}
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+  background: blue;
+  color: white;
 }
 code {
-  color: white;
-  background: black;
+  background: #eaeaea;
+  font-size: 0.8em;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  font-family: monospace;
 }
 div.highlighter-rouge code {
   display: block;
@@ -53,6 +64,13 @@ blockquote {
 }
 blockquote p {
   margin: 0;
+}
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }
 
 /* Layout helpers */
@@ -82,6 +100,9 @@ ul.post-list li {
   align-items: flex-start;
   justify-content: space-between;
   margin: 0;
+}
+ul.post-list svg {
+  margin-right: 0.5em;
 }
 ul.post-list li > * {
   display: block;
@@ -150,9 +171,24 @@ table, th, td {
 
 /* Images */
 img {
+  pointer-events: none;
+  user-select: none;
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  border-radius: 0.3em;
+  border: 1px solid #ddd;
+}
+.image-with-caption {
+  margin: 3rem 0;
+  text-align: center;
+  border-radius: 0.3em;
+}
+.image-with-caption figcaption {
+  margin: 0.6rem 0 0.3rem;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 0.8em;
 }
 
 /* Horizontal rules */
@@ -193,6 +229,7 @@ body.layout-home header h1 {
 body.layout-home header p {
   margin: 1rem 0 2rem;
   text-align: left;
+  line-height: 1.3em;
 }
 
 /* Post Layout */

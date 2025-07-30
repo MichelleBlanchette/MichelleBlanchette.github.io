@@ -1,6 +1,5 @@
 ---
 title: "Deferred Google Map Rendering to Reduce API Spend"
-published: true
 ---
 
 Dentist profile pages on DentalPlans.com included a Google Map at the bottom to help users locate practices. After a spike in automated traffic, the site began incurring excessive API usage fees despite most users never scrolling far enough to view the map.

@@ -1,6 +1,5 @@
 ---
 title: "Consolidated API Access to Improve Security, Stability, and Cost Control"
-published: true
 ---
 
 When I joined DentalPlans.com, I audited the frontend’s API usage and uncovered several critical issues: private microservice endpoints and authentication credentials were exposed to the public, and excessive re-rendering in the React app was triggering redundant, uncached requests to a metered third-party API. These problems not only introduced significant security risks but also led to a slow, flickering user experience and unnecessary infrastructure costs.

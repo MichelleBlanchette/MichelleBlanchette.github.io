@@ -1,5 +1,5 @@
 ---
-title: "Improved HTML Crawling by 85% for SEO Efficiency"
+title: "Boosted SEO Crawl Efficiency by 85% with Improved HTML Crawling"
 ---
 
 While reviewing crawl reports across DentalPlans.com properties, I noticed an alarming split: only 45.4% of crawl activity was spent on HTML, while 40.6% was consumed by JSON API endpoints. Since the marketing site is primarily server-rendered and optimized for SEO, this misallocation was a clear drain on crawl budget and search engine visibility.

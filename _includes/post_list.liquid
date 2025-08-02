@@ -1,9 +1,5 @@
 {%- if site.posts.size > 0 -%}
   <ul class="post-list">
-    <li>
-      <span>{{- "2025-07-27" | date: "%Y %b %d" -}}</span>
-      <span style="border-left-style:dashed;"><em>migration underway&mdash;more content coming soon</em></span>
-    </li>
     {%- for post in site.posts -%}
       <li>
         <span>{{- post.date | date: "%Y %b %d" -}}</span>

@@ -1,5 +1,6 @@
 ---
 title: "Stabilized Google Map UX & Reduced API Usage with Memoized Rendering"
+has_image: true
 ---
 
 The dentist search feature on DentalPlans.com includes an interactive Google Map built into a React application. In high-density areas, users experienced jarring flickers and recentering bugs when panning the map, creating a frustrating and unreliable experience.
@@ -7,3 +8,8 @@ The dentist search feature on DentalPlans.com includes an interactive Google Map
 I replaced the outdated map component with Google’s officially supported implementation, resolving deprecation issues and improving baseline stability. I then introduced memoization to avoid unnecessary re-renders, significantly boosting performance.
 
 The updated solution delivered smoother interactions, reduced redundant API calls, and laid the groundwork for future scalability without additional tech debt.
+
+{% include image_with_caption.liquid
+   src="/assets/images/dentalplans/dentist-search-results.png"
+   alt=""
+   caption="Dentist search application on DentalPlans.com" %}

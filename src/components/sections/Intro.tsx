@@ -5,9 +5,9 @@ import { Star } from "lucide-react";
 
 export default function Intro() {
     return (
-        <div className="component-Intro w-screen py-24 bg-gradient-to-b from-white to-slate-100">
+        <div className="component-Intro w-screen py-24 bg-gradient-to-b from-white to-slate-100 border-b border-b-slate-200">
             <div className="max-w-5xl w-screen p-4 mx-auto flex items-center justify-between">
-                <div className="w-1/2">
+                <div className="w-1/2 mb-10">
                     <div className="flex align-center space-x-2 mb-2">
                         <Badge label="8+ Years Experience" color="violet" icon={Star} iconFilled />
                     </div>
@@ -22,9 +22,23 @@ export default function Intro() {
                         </li>
                     </ul>
                 </div>
-                <div className="w-1/2 text-right">
+                <div className="w-1/2 text-right relative">
+                    <div
+                        className="
+                            absolute
+                            top-0
+                            right-0
+                            rounded-full
+                            w-[312px]
+                            h-[500px]
+                            rotate-310
+                            opacity-100
+                            bg-[url(/Michelle-Blanchette_initials-tile.png)]
+                            bg-size-[auto_30%]
+                        "
+                    />
                     <Image
-                        className="inline-block rounded-full shadow-lg"
+                        className="inline-block rounded-full shadow-lg relative"
                         src="/Michelle-Blanchette.jpg"
                         alt="Michelle Blanchette smiling in professional attire on a bright blue background"
                         width={312}

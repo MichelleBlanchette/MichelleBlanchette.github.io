@@ -12,14 +12,20 @@ export default function Navbar() {
 
     return (
         <header className="component-Navbar fixed top-0 w-screen flex justify-center py-2">
-            <div className="max-w-5xl w-screen flex items-center justify-between py-2 pl-2 pr-10 shadow bg-gradient-to-r from-gray-100/80 to-gray-50/80 backdrop-blur rounded-full">
+            <div className="max-w-5xl w-screen flex items-center justify-between py-2 pl-2 pr-10 shadow bg-gradient-to-r from-gray-200/50 to-gray-50/80 backdrop-blur rounded-full">
                 <div className="flex items-center space-x-2">
-                    <Image
-                        className="rounded-full"
-                        src="/favicon.png"
-                        alt="MB initials logo"
-                        width={40}
-                        height={40}
+                    <div
+                        className="
+                            bg-[url(/Michelle-Blanchette_logo.svg)]
+                            bg-size-[66%]
+                            bg-no-repeat
+                            bg-center
+                            bg-white
+                            border-2 border-gray-200
+                            w-[40px]
+                            h-[40px]
+                            rounded-full
+                        "
                     />
                     <p className="font-heading text-3xl/7 font-bold tracking-tight">Michelle Blanchette</p>
                 </div>

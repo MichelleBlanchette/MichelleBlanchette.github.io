@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 
 export default function Intro() {
     return (
-        <div className="component-Intro w-screen py-24 bg-gradient-to-b from-white to-slate-100 border-b border-b-slate-200">
+        <div className="component-Intro w-screen py-24 bg-gradient-to-b from-white to-gray-100">
             <div className="max-w-5xl w-screen p-4 mx-auto flex items-center justify-between">
                 <div className="w-1/2 mb-10">
                     <div className="flex align-center space-x-2 mb-2">

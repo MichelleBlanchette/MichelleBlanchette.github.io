@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Navbar() {
 
     const navLinks = [
@@ -11,8 +9,8 @@ export default function Navbar() {
     ];
 
     return (
-        <header className="component-Navbar fixed top-0 w-screen flex justify-center py-2">
-            <div className="max-w-5xl w-screen flex items-center justify-between py-2 pl-2 pr-10 shadow bg-gradient-to-r from-gray-200/50 to-gray-50/80 backdrop-blur rounded-full">
+        <header className="component-Navbar fixed top-0 w-screen p-4 z-999">
+            <div className="max-w-5xl w-screen mx-auto flex items-center justify-between py-2 pl-2 pr-10 shadow-md bg-gradient-to-r from-gray-200/50 to-gray-50/90 backdrop-blur rounded-full">
                 <div className="flex items-center space-x-2">
                     <div
                         className="
@@ -33,7 +31,7 @@ export default function Navbar() {
                     <ul className="flex">
                         {navLinks.map((link) => (
                             <li key={link.label}>
-                                <a href={link.href} className="rounded-full py-1 px-2 text-black/60 hover:text-black">{link.label}</a>
+                                <a href={link.href} className="rounded-md py-2 px-3 font-medium text-black/70 hover:text-black hover:bg-white hover:shadow-sm">{link.label}</a>
                             </li>
                         ))}
                     </ul>

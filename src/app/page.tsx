@@ -1,9 +1,11 @@
 import Intro from "@/components/sections/Intro";
+import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start justify-between">
+    <main>
       <Intro />
+      <Skills />
     </main>
   );
 }

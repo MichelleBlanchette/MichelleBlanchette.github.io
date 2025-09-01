@@ -11,14 +11,14 @@ export default function Intro() {
                     <div className="flex align-center gap-x-2 mb-2">
                         <Badge label="8+ Years Experience" color="violet" icon={Star} iconFilled />
                     </div>
-                    <h1 className="font-heading text-7xl/14 font-bold my-5">Senior Full-Stack Web Developer</h1>
-                    <p className="mt-2 text-lg">Delivering data-driven results for Fortune 500 companies, start-ups, and small businesses since 2017.</p>
+                    <h1 className="font-heading text-7xl/14 font-bold my-5">Senior Full&#8209;Stack Web Developer</h1>
+                    <p className="text-lg">Delivering data&#8209;driven results for Fortune 500 companies, start&#8209;ups, and small businesses since 2017.</p>
                     <ul className="flex items-center gap-x-4 mt-10">
                         <li>
-                            <Button variant="primary" href="#projects">View Portfolio</Button>
+                            <Button variant="primary" href="https://www.linkedin.com/in/michelle-blanchette/">Connect on LinkedIn</Button>
                         </li>
                         <li>
-                            <Button variant="secondary" href="/Michelle-Blanchette_resume.pdf" target="_blank" rel="noopener noreferrer">Download Resumé</Button>
+                            <Button variant="secondary" href="mailto:mblan.dev@gmail.com">Send Email</Button>
                         </li>
                     </ul>
                 </div>

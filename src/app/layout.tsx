@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Markazi_Text, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/ui/Navbar";
 
 const markaziText = Markazi_Text({
   variable: "--font-markazi-text",

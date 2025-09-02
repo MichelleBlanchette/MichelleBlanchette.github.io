@@ -1,7 +1,7 @@
 import type { LucideIcon } from "lucide-react";
 
 const colorClasses = {
-    "gray-dark": "bg-gray-300 text-gray-950 border-gray-400",
+    "gray-dark": "bg-gray-300 text-gray-900 border-gray-400",
     "gray": "bg-gray-100 text-gray-800 border-gray-200",
     "violet": "bg-violet-100 text-violet-800 border-violet-200",
     "fuchsia": "bg-fuchsia-100 text-fuchsia-800 border-fuchsia-200",
@@ -36,7 +36,7 @@ export default function Badge(
     return (
         "string" === typeof label ?
         (
-            <p className={`component-Badge inline-flex items-center rounded-full gap-2 pl-2 pr-3 py-[0.15em] text-xs border ${colorClasses[color]}`}>
+            <p className={`component-Badge inline-flex items-center rounded-full gap-2 pl-2 pr-3 py-[0.15em] font-body text-xs border ${colorClasses[color]}`}>
                 {Icon && <Icon className={`inline-block w-[1.3em] ${iconFilled ? "fill-current stroke-width-0" : ""}`} />}
                 <span className="font-semibold">{label}</span>
             </p>

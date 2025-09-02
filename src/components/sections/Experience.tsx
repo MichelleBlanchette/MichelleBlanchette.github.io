@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AppWindow, DollarSign, Eye, SearchCode, TrendingUp, UsersRound } from "lucide-react";
+import { AppWindow, Award, ChartNoAxesCombined, DollarSign, Eye, Handshake, HeartHandshake, Rocket, SearchCode, TrendingUp, Trophy, UsersRound } from "lucide-react";
 import Badge from "@/components/ui/Badge";
 
 export default function Experience() {
@@ -8,14 +8,14 @@ export default function Experience() {
         {
             role: "Senior Web Developer",
             employer: "Henry Schein ONE, DentalPlans.com",
-            employerAnnotation: "Fortune #36",
+            employerAnnotation: <Badge label="Fortune 500" icon={Trophy} color="amber" />,
             employerLogo: "/logo-dentalplans.webp",
             dates: "October 2023 – Present",
-            description: "Leading website development and optimization efforts to maximize conversions.",
+            description: "Leading website development and optimization efforts to maximize conversions and serve our users.",
             impacts: [
                 {
                     icon: <Badge color="gray-dark" icon={TrendingUp} />,
-                    metric: "2x",
+                    metric: "2X",
                     description: "Increase in conversion rate"
                 },
                 {
@@ -42,43 +42,44 @@ export default function Experience() {
         {
             role: "Software Engineer",
             employer: "Hearst",
-            employerAnnotation: "Fortune #36",
+            employerAnnotation: <Badge label="Fortune Top 50" icon={Award} color="blue" />,
             employerLogo: "/logo-hearst.jpg",
             dates: "July 2021 – July 2022",
-            description: "Rapidly developed unique experiences for large-scale local commerce promotions.",
+            description: "Rapidly developed innovative digital marketing initiatives driving new revenue streams across multiple markets.",
             impacts: [
-                // {
-                //     icon: <Badge color="gray-dark" icon={AppWindow} />,
-                //     metric: "99%",
-                //     description: "Reduction in customer-facing email issues"
-                // },
-                // {
-                //     icon: <Badge color="gray-dark" icon={Eye} />,
-                //     metric: "83M+",
-                //     description: "Page views across all websites"
-                // },
-                // {
-                //     icon: <Badge color="gray-dark" icon={DollarSign} />,
-                //     metric: "$72M+",
-                //     description: "Total revenue generated"
-                // },
+                {
+                    icon: <Badge color="gray-dark" icon={Rocket} />,
+                    metric: "95%",
+                    description: "Automated content workflow"
+                },
+                {
+                    icon: <Badge color="gray-dark" icon={Handshake} />,
+                    metric: "250+",
+                    description: "Brand partnerships"
+                },
+                {
+                    icon: <Badge color="gray-dark" icon={ChartNoAxesCombined} />,
+                    metric: "$4M+",
+                    description: "Annual revenue within 2 years"
+                },
             ],
             skills: [
                 "React",
                 "API Integration",
                 "WordPress",
-                "Redux Toolkit",
-                "SCSS Modules",
+                "Custom Analytics",
+                "Product Engineering",
                 "Workflow Automation",
+                "Data-Driven Email Marketing",
             ]
         },
         {
             role: "WordPress Developer",
             employer: "PETA",
-            employerAnnotation: "International non-profit",
+            employerAnnotation: <Badge label="Global Nonprofit" icon={HeartHandshake} color="fuchsia" />,
             employerLogo: "/logo-peta.jpg",
             dates: "August 2020 – July 2021",
-            description: "Launched, supported, and optimized WordPress websites on a global scale.",
+            description: "Launched, supported, and optimized advocacy websites across 10 international regions.",
             impacts: [
                 // Source: https://www.peta.org/wp-content/uploads/2022/04/PETA-FY21-AFS.pdf
                 {
@@ -101,6 +102,11 @@ export default function Experience() {
                 "WordPress",
                 "JavaScript",
                 "PHP",
+                "Pixel-Perfect Frontends",
+                "Legacy Codebases",
+                "DevOps Automation",
+                "Docker",
+                "WordPress Plugin Development",
             ]
         },
     ];
@@ -117,7 +123,10 @@ export default function Experience() {
                                 <div className="flex items-start justify-start gap-4 mb-4">
                                     <Image className="rounded-lg" src={job.employerLogo} alt="Company logo" width={64} height={64} />
                                     <div className="flex-1 text-left">
-                                        <h3 className="font-heading font-bold text-3xl/8">{job.role}</h3>
+                                        <h3 className="font-heading font-bold text-3xl/8 flex items-start gap-2">
+                                            {job.role}
+                                            {job.employerAnnotation}
+                                        </h3>
                                         <p className="text-sm text-gray-700">{`${job.employer} • ${job.dates}`}</p>
                                         <p className="mt-2 text-gray-700">{job.description}</p>
                                     </div>

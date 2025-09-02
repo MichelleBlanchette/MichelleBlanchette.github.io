@@ -26,16 +26,20 @@ export default function Skills() {
                 "Node.js",
                 "PHP",
                 "REST APIs",
+                "API Integration",
                 "PostgreSQL",
+                "MySQL",
                 "Supabase",
                 "Vercel",
+                "Nginx",
                 "Docker",
+                "Linux",
             ]
         },
         {
             badge: <Badge color="blue" icon={Globe} />,
             title: "WordPress CMS Mastery",
-            description: "Expertise in building and optimizing WordPress sites",
+            description: "Expertise in the leading Content Management System",
             skills: [
                 "WordPress VIP",
                 "Plugin Development",

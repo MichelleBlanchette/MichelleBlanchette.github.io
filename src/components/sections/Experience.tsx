@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { AppWindow, Award, ChartNoAxesCombined, DollarSign, Eye, Handshake, HeartHandshake, Rocket, SearchCode, TrendingUp, Trophy, UsersRound } from "lucide-react";
 import Badge from "@/components/ui/Badge";
+import Button from "@/components/ui/Button";
 
 export default function Experience() {
 
@@ -156,6 +157,31 @@ export default function Experience() {
                             </div>
                         ))
                     }
+                </div>
+                <div className="bg-gray-900 text-white p-12 rounded-xl text-left relative overflow-hidden border border-gray-300">
+                    <h3 className="font-heading font-bold text-4xl/8">Ready to drive similar results for your project?</h3>
+                    <p className="my-2">Let&rsquo;s discuss how my expertise can accelerate your business goals.</p>
+                    <ul className="flex items-center gap-x-4 mt-8">
+                        <li>
+                            <Button variant="secondary" href="https://www.linkedin.com/in/michelle-blanchette/">Connect on LinkedIn</Button>
+                        </li>
+                        <li>
+                            <Button variant="tertiary" href="mailto:mblan.dev@gmail.com">Send Email</Button>
+                        </li>
+                    </ul>
+                    <div
+                        className="
+                            absolute
+                            top-0
+                            -right-[40%]
+                            w-full
+                            h-[200%]
+                            -rotate-60
+                            bg-[url(/Michelle-Blanchette_initials-tile.png)]
+                            bg-size-[auto_150px]
+                            bg-white
+                        "
+                    />
                 </div>
             </div>
         </div>

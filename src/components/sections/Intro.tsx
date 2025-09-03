@@ -30,9 +30,8 @@ export default function Intro() {
                                 inset-0
                                 rounded-full
                                 -rotate-50
-                                opacity-100
                                 bg-[url(/Michelle-Blanchette_initials-tile.png)]
-                                bg-size-[auto_30%]
+                                bg-size-[auto_150px]
                             "
                         />
                         <Image

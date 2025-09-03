@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Markazi_Text, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
 
 const markaziText = Markazi_Text({
   variable: "--font-markazi-text",
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${markaziText.variable} ${inter.variable} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

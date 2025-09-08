@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Activity Feed Posts
 
-## Getting Started
+Posts are Markdown files with Front Matter to provide a more comfortable writing experience and be easily ported to/from Jekyll.
 
-First, run the development server:
+### File Names
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Post files should be stored directly in `_posts` and follow the regular Jekyll format:
+
+```
+./_posts/YYYY-MM-DD-slug.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Front Matter
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Here are the front matter variables (with example values) that you should include in each post:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```yaml
+---
+title: "Improved Page Load by 65% with Memoized Rendering" # Full article title with proper capitalization, preferably including a KPI metric.
+short: "Just shipped a React optimization that cut load times by 3.2 seconds 🚀 Client is thrilled!" # Twitter-like teaser humanizing this post for activity feed display.
+images: # Optional. Array of related images to accompany the post.
+  - src: "/images/cat.jpg"
+    caption: "A cute cat"
+  - src: "/images/dog.jpg"
+    caption: "A happy dog"
+  - src: "/images/bird.jpg"
+    caption: "A colorful bird"
+---
+```
 
-## Learn More
+### Content
 
-To learn more about Next.js, take a look at the following resources:
+Posts should be as succinct and skimmable as possible with a professional, fact-driven tone.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Measurable KPI outcomes are preferred for immediately identifiable and relatable value.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Prefer 1-2 sentences per paragraph following this structure:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Problem** – The situation or observation which prompted the work.
+- **Solution** – The implementation or changes that solved the problem.
+- **Impact** – The positive outcomes of the problem being resolved or the added benefits provided by the solution.

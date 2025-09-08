@@ -7,7 +7,7 @@ DentalPlans.com partners with the largest dental networks, like [Aetna](https://
 
 I co-led the redesign and migration effort, introducing a Git submodule strategy to synchronize shared code between AetnaDentalOffers.com and DentalPlans.com. This allowed enhancements to propagate seamlessly across both sites, reducing duplication and improving long-term maintainability across teams.
 
-The new site launched with pages loading twice as fast and converting at double the previous rate. The business impact was so clear that senior leadership delivered direct praise and recognition for the success.
+The new site launched with pages loading twice as fast and converting at double the previous rate. The business impact was so clear that executive leadership delivered direct praise and recognition for the success.
 
 {% include image_with_caption.liquid
    src="/assets/images/aetnadentaloffers/home.png"

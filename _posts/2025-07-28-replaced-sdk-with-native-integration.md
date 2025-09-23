@@ -1,5 +1,6 @@
 ---
 title: "Cut Radar SDK Errors by 87.8% with Native Integration"
+short: "If you aren't building a full integration suite, then provided API SDKs typically aren't worth it. I literally just **cut our error rates by 87.8%** after replacing the service's provided SDK with my own implementation, and it only took a few hours to code. 🤷‍♀️"
 ---
 
 While analyzing Radar location detection logs for DentalPlans.com, I discovered that the majority of failures stemmed from a recurring `ERROR_PUBLISHABLE_KEY` issue. The key was correctly configured and the error appeared inconsistently, so I decided to look into it.

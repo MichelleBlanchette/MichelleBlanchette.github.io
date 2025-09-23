@@ -30,13 +30,13 @@ export default function Intro() {
                                 inset-0
                                 rounded-full
                                 -rotate-50
-                                bg-[url(/Michelle-Blanchette_initials-tile.png)]
+                                bg-[url(/images/Michelle-Blanchette_initials-tile.png)]
                                 bg-size-[auto_150px]
                             "
                         />
                         <Image
                             className="relative rounded-full shadow-lg"
-                            src="/Michelle-Blanchette.jpg"
+                            src="/images/Michelle-Blanchette.jpg"
                             alt="Michelle Blanchette smiling in professional attire on a bright blue background"
                             width={312}
                             height={500}

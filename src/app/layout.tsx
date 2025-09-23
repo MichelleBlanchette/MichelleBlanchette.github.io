@@ -16,7 +16,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Michelle Blanchette | Full-Stack Web Developer",
-  description: "Michelle Blanchette is a full-stack web developer with 8+ years of experience working with Fortune 500 companies. She is specialized in React, TypeScript, and API integrations.",
+  description: "Michelle Blanchette is a full-stack web developer with 8+ years of experience working with top enterprises and small businesses. She is specialized in React, TypeScript, and API integrations. Connect today!",
   icons: {
     icon: "/favicon.png",
   }

@@ -25,7 +25,7 @@ export default function Navbar() {
                     <div className="flex items-center gap-x-2">
                         <div
                             className="
-                                bg-[url(/Michelle-Blanchette_logo.svg)]
+                                bg-[url(/images/Michelle-Blanchette_logo.svg)]
                                 bg-size-[66%]
                                 bg-no-repeat
                                 bg-center

@@ -10,7 +10,7 @@ export default function Experience() {
             role: "Senior Web Developer",
             employer: "Henry Schein ONE, DentalPlans.com",
             employerAnnotation: <Badge label="Fortune 500" icon={Trophy} color="amber" />,
-            employerLogo: "/logo-dentalplans.webp",
+            employerLogo: "/images/logo-dentalplans.webp",
             dates: "October 2023 – Present",
             description: "Leading website development and optimization efforts to maximize conversions and serve our users.",
             impacts: [
@@ -44,7 +44,7 @@ export default function Experience() {
             role: "Software Engineer",
             employer: "Hearst",
             employerAnnotation: <Badge label="Fortune Top 50" icon={Award} color="blue" />,
-            employerLogo: "/logo-hearst.jpg",
+            employerLogo: "/images/logo-hearst.jpg",
             dates: "July 2021 – July 2022",
             description: "Rapidly developed innovative digital marketing initiatives driving new revenue streams across multiple markets.",
             impacts: [
@@ -78,7 +78,7 @@ export default function Experience() {
             role: "WordPress Developer",
             employer: "PETA",
             employerAnnotation: <Badge label="Global Nonprofit" icon={HeartHandshake} color="fuchsia" />,
-            employerLogo: "/logo-peta.jpg",
+            employerLogo: "/images/logo-peta.jpg",
             dates: "August 2020 – July 2021",
             description: "Launched, supported, and optimized advocacy websites across 10 international regions.",
             impacts: [
@@ -115,7 +115,7 @@ export default function Experience() {
     return (
         <div className="component-Experience w-full py-20 sm:py-24 bg-white">
             <div className="max-w-5xl w-full p-4 mx-auto text-center">
-                <h2 className="font-heading text-[42px]/10 sm:text-6xl/12 font-bold mb-5">Professional Enterprise Experiences</h2>
+                <h2 className="font-heading text-[42px]/9 sm:text-6xl/12 font-bold mb-5">Professional Enterprise Experiences</h2>
                 <p className="text-lg max-w-2xl mx-auto">With full-time work experiences at leading organizations, I know what it takes to operate at massive scale and consistently deliver results.</p>
                 <div className="space-y-6 my-8 text-left">
                     {
@@ -166,14 +166,14 @@ export default function Experience() {
                         overflow-hidden
                         border
                         border-gray-300
-                        bg-[url(/Michelle-Blanchette_initials-tile.png)]
+                        bg-[url(/images/Michelle-Blanchette_initials-tile.png)]
                         bg-size-[auto_150px]
                     "
                 >
-                    <div className="bg-gray-900 text-white p-12 pr-[15%] w-fit [clip-path:polygon(0_0,100%_0,85%_100%,0%_100%)]">
-                        <h3 className="font-heading font-bold text-4xl/8">Ready to drive similar results for your project?</h3>
+                    <div className="bg-gray-900 text-white p-9 sm:p-12 sm:pr-[15%] w-fit [clip-path:polygon(0_0,100%_0,70%_100%,0%_100%)] sm:[clip-path:polygon(0_0,100%_0,85%_100%,0%_100%)]">
+                        <h3 className="font-heading font-bold text-3xl/6 sm:text-4xl/8">Ready to drive similar results for your project?</h3>
                         <p className="my-2">Let&rsquo;s discuss how my expertise can accelerate your business goals.</p>
-                        <ul className="flex items-center gap-x-4 mt-8">
+                        <ul className="flex flex-col sm:flex-row sm:items-center gap-4 mt-8">
                             <li>
                                 <Button variant="secondary" href="https://www.linkedin.com/in/michelle-blanchette/">Connect on LinkedIn</Button>
                             </li>

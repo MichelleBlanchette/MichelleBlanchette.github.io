@@ -36,7 +36,7 @@ export default function Badge(
     return (
         "string" === typeof label ?
         (
-            <p className={`component-Badge inline-flex items-center rounded-full gap-2 pl-2 pr-3 py-[0.15em] font-body text-xs border ${colorClasses[color]}`}>
+            <p className={`component-Badge inline-flex items-center rounded-full gap-2 pl-2 pr-3 py-[0.15em] font-body text-xs border ${colorClasses[color]} whitespace-nowrap`}>
                 {Icon && <Icon className={`inline-block w-[1.3em] ${iconFilled ? "fill-current stroke-width-0" : ""}`} />}
                 <span className="font-semibold">{label}</span>
             </p>

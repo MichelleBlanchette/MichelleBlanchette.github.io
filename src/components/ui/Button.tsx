@@ -17,7 +17,7 @@ export default function Button(
     } & DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
 ) {
     return (
-        <a className={`inline-block px-6 py-3 font-semibold rounded-lg transition shadow-md ${variants[variant]}`} {...rest}>
+        <a className={`inline-block px-4 md:px-6 py-3 font-semibold rounded-lg transition shadow-md ${variants[variant]}`} {...rest}>
             {children}
         </a>
     )

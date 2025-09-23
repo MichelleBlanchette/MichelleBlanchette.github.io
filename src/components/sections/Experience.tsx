@@ -113,18 +113,18 @@ export default function Experience() {
     ];
 
     return (
-        <div className="component-Experience w-full py-24 bg-white">
+        <div className="component-Experience w-full py-20 sm:py-24 bg-white">
             <div className="max-w-5xl w-full p-4 mx-auto text-center">
-                <h2 className="font-heading text-6xl/12 font-bold mb-5">Professional Enterprise Experiences</h2>
+                <h2 className="font-heading text-[42px]/10 sm:text-6xl/12 font-bold mb-5">Professional Enterprise Experiences</h2>
                 <p className="text-lg max-w-2xl mx-auto">With full-time work experiences at leading organizations, I know what it takes to operate at massive scale and consistently deliver results.</p>
                 <div className="space-y-6 my-8 text-left">
                     {
                         experiences.map(job => (
                             <div key={job.dates} className="bg-white border border-gray-200 p-5 rounded-xl">
-                                <div className="flex items-start justify-start gap-4 mb-4">
+                                <div className="flex flex-col sm:flex-row sm:flex-nowrap items-start justify-start gap-4 mb-4">
                                     <Image className="rounded-lg" src={job.employerLogo} alt="Company logo" width={64} height={64} />
                                     <div className="flex-1 text-left">
-                                        <h3 className="font-heading font-bold text-3xl/8 flex items-start gap-2">
+                                        <h3 className="font-heading font-bold text-3xl/8 flex flex-col-reverse sm:flex-row items-start gap-2">
                                             {job.role}
                                             {job.employerAnnotation}
                                         </h3>
@@ -132,7 +132,7 @@ export default function Experience() {
                                         <p className="mt-2 text-gray-700">{job.description}</p>
                                     </div>
                                     <div className="flex-1 ml-auto">
-                                        <ul className="flex flex-row flex-wrap justify-end gap-x-2 gap-y-2">
+                                        <ul className="flex flex-row flex-wrap justify-start sm:justify-end gap-x-2 gap-y-2">
                                             {
                                                 job.skills.map(skill => (
                                                     <li key={skill} className="px-2 py-1 border border-gray-200 rounded-lg text-xs font-semibold cursor-default hover:bg-black hover:border-black hover:text-white">{skill}</li>
@@ -141,7 +141,7 @@ export default function Experience() {
                                         </ul>
                                     </div>
                                 </div>
-                                <ul className="grid grid-cols-3 gap-4">
+                                <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                     {
                                         job.impacts.map(impact => (
                                             <li key={impact.metric} className="flex items-start justify-start gap-4 p-4 bg-gray-100 rounded-lg">
@@ -158,30 +158,30 @@ export default function Experience() {
                         ))
                     }
                 </div>
-                <div className="bg-gray-900 text-white p-12 rounded-xl text-left relative overflow-hidden border border-gray-300">
-                    <h3 className="font-heading font-bold text-4xl/8">Ready to drive similar results for your project?</h3>
-                    <p className="my-2">Let&rsquo;s discuss how my expertise can accelerate your business goals.</p>
-                    <ul className="flex items-center gap-x-4 mt-8">
-                        <li>
-                            <Button variant="secondary" href="https://www.linkedin.com/in/michelle-blanchette/">Connect on LinkedIn</Button>
-                        </li>
-                        <li>
-                            <Button variant="tertiary" href="mailto:mblan.dev@gmail.com">Send Email</Button>
-                        </li>
-                    </ul>
-                    <div
-                        className="
-                            absolute
-                            top-0
-                            -right-[40%]
-                            w-full
-                            h-[200%]
-                            -rotate-60
-                            bg-[url(/Michelle-Blanchette_initials-tile.png)]
-                            bg-size-[auto_150px]
-                            bg-white
-                        "
-                    />
+                <div
+                    className="
+                        bg-white
+                        rounded-xl
+                        text-left
+                        overflow-hidden
+                        border
+                        border-gray-300
+                        bg-[url(/Michelle-Blanchette_initials-tile.png)]
+                        bg-size-[auto_150px]
+                    "
+                >
+                    <div className="bg-gray-900 text-white p-12 pr-[15%] w-fit [clip-path:polygon(0_0,100%_0,85%_100%,0%_100%)]">
+                        <h3 className="font-heading font-bold text-4xl/8">Ready to drive similar results for your project?</h3>
+                        <p className="my-2">Let&rsquo;s discuss how my expertise can accelerate your business goals.</p>
+                        <ul className="flex items-center gap-x-4 mt-8">
+                            <li>
+                                <Button variant="secondary" href="https://www.linkedin.com/in/michelle-blanchette/">Connect on LinkedIn</Button>
+                            </li>
+                            <li>
+                                <Button variant="tertiary" href="mailto:mblan.dev@gmail.com">Send Email</Button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

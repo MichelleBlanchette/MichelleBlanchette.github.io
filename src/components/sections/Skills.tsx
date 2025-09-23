@@ -67,18 +67,18 @@ export default function Skills() {
     ];
 
     return (
-        <div className="component-Skills w-full pb-24 bg-gray-100">
+        <div className="component-Skills w-full pb-20 sm:pb-24 bg-gray-100">
             <div className="max-w-5xl w-full p-4 mx-auto text-center">
-                <h2 className="font-heading text-6xl/12 font-bold mb-5">Complete Package Skillset</h2>
+                <h2 className="font-heading text-[42px]/10 sm:text-6xl/12 font-bold mb-5">Complete Package Skillset</h2>
                 <p className="text-lg max-w-2xl mx-auto">From snappy frontends to scalable backends, I&rsquo;m able to provide end&#8209;to&#8209;end solutions that drive real business impact across the entire tech stack.</p>
-                <div className="grid grid-cols-2 gap-6 my-8 text-left">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 text-left">
                     {
                         skills.map(card => (
                             <div key={card.title} className="bg-white border border-gray-200 p-5 rounded-xl">
                                 <div className="flex items-start justify-start gap-4 mb-4">
                                     {card.badge}
                                     <div className="flex-1">
-                                        <h3 className="font-heading font-bold text-3xl/8">{card.title}</h3>
+                                        <h3 className="font-heading font-bold text-3xl/6">{card.title}</h3>
                                         <p className="mt-1 text-sm text-gray-700">{card.description}</p>
                                     </div>
                                 </div>

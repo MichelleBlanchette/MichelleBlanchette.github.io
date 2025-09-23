@@ -20,7 +20,7 @@ export default function Navbar() {
 
     return (
         <header className="component-Navbar w-full fixed top-0 z-999">
-            <div className="max-w-5xl w-full p-4 mx-auto flex items-center justify-between">
+            <div className="max-w-5xl w-full p-2 md:p-4 mx-auto flex items-center justify-between">
                 <div className="w-full flex items-center justify-between py-2 pl-2 pr-8 shadow-md bg-gradient-to-r from-gray-200/50 to-gray-50/90 backdrop-blur rounded-full">
                     <div className="flex items-center gap-x-2">
                         <div
@@ -36,7 +36,7 @@ export default function Navbar() {
                                 rounded-full
                             "
                         />
-                        <p className="font-heading text-3xl/7 font-bold tracking-tight">Michelle Blanchette</p>
+                        <p className="font-heading text-2xl/5 md:text-3xl/7 font-bold tracking-tight">Michelle Blanchette</p>
                     </div>
                     <nav>
                         <ul className="flex items-center gap-x-1">

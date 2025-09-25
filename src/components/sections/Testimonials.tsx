@@ -1,7 +1,17 @@
+import { Quote } from "lucide-react";
+import Button from "../ui/Button";
+
+type Testimonial = {
+    date: string;
+    review: string;
+    person: string;
+    role: string;
+    company: string;
+};
 
 export default function Testimonials() {
 
-    const testimonials = [
+    const testimonials: Testimonial[] = [
         {
             date: "May 23, 2025",
             review: "Appreciate Michelle for being so thorough with the updates on profile pages. I can't wait to see how these convert.",
@@ -116,21 +126,67 @@ export default function Testimonials() {
         },
     ];
 
+    const testimonialColumns = [[], [], []] as Testimonial[][];
+    testimonials.forEach((testimonial, index) => {
+        testimonialColumns[index % 3].push(testimonial);
+    });
+
     return (
-        <div className="component-Testimonials w-full py-20 sm:py-24 bg-white">
+        <div className="component-Testimonials w-full pb-20 sm:py-24 bg-white">
             <div className="max-w-5xl w-full p-4 mx-auto text-center">
                 <h2 className="font-heading text-[42px]/9 sm:text-6xl/12 font-bold mb-5">Trusted by Clients and Colleagues</h2>
                 <p className="text-lg max-w-2xl mx-auto">My solutions often improve my teams&rsquo; workflows, and stakeholders especially appreciate my commitment to delivering exceptional quality.</p>
-                <ul className="space-y-6 my-8 text-left">
-                    {   // TODO: Masonry or chat style layout for organic feel.
-                        testimonials.map(({review, person, role, company}, idx) => (
-                            <li key={idx} className="bg-white border border-gray-200 p-5 rounded-xl">
-                                {review}<br />
-                                {`${person}, ${role} @ ${company}`}
-                            </li>
-                        ))
-                    }
-                </ul>
+                <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-left">
+                    {testimonialColumns.map((column, colIndex) => (
+                        <div key={colIndex} className="space-y-8">
+                            {column.map((testimonial, index) => (
+                                <div key={index} className="p-6 border border-gray-200 rounded-lg shadow-sm bg-gradient-to-b from-white to-gray-50">
+                                    <p className="text-gray-800 mb-4 relative">
+                                        <Quote className="font-semibold absolute -top-9 -scale-x-130 scale-y-110" fill="currentColor" strokeWidth={0} aria-label="quote" />
+                                        {testimonial.review}
+                                    </p>
+                                    <div className="flex gap-2">
+                                        <div
+                                            className="
+                                                inline-flex
+                                                items-center
+                                                justify-center
+                                                h-10
+                                                w-10
+                                                rounded-full
+                                                bg-gray-800
+                                                text-gray-200
+                                                font-semibold
+                                                text-lg
+                                            "
+                                            aria-hidden="true"
+                                        >{testimonial.person.charAt(0)}</div>
+                                        <div className="flex-1">
+                                            <p className="text-sm font-semibold">{testimonial.person}</p>
+                                            <p className="text-xs text-gray-600">{testimonial.role}, {testimonial.company}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                            {
+                                1 === colIndex && (
+                                    <div className="px-6 pt-8 pb-10 border border-gray-200 rounded-lg shadow-sm bg-gradient-to-tl from-gray-800 to-black text-white">
+                                        <h3 className="font-heading font-bold text-3xl/6 sm:text-4xl/8">Let&rsquo;s talk.</h3>
+                                        <p className="my-2">I&rsquo;d love to bring the same dedication and impact to you.</p>
+                                        <ul className="flex flex-col gap-4 mt-8">
+                                            <li>
+                                                <Button variant="secondary" href="https://www.linkedin.com/in/michelle-blanchette/">Connect on LinkedIn</Button>
+                                            </li>
+                                            <li>
+                                                <Button variant="tertiary" href="mailto:mblan.dev@gmail.com">Send Email</Button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                )
+                            }
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

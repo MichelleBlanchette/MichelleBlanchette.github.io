@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AppWindow, Award, ChartNoAxesCombined, Code, DollarSign, Eye, Handshake, HeartHandshake, Package, RefreshCw, Rocket, SearchCode, Sprout, TrendingUp, Trophy, UsersRound } from "lucide-react";
+import { AppWindow, Award, BriefcaseBusiness, Building, ChartNoAxesCombined, Code, DollarSign, Eye, Handshake, HeartHandshake, Mail, Package, RefreshCw, Rocket, SearchCode, Sprout, TrendingUp, Trophy, UsersRound } from "lucide-react";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 
@@ -11,7 +11,8 @@ export default function Experience() {
             employer: "Henry Schein ONE, DentalPlans.com",
             employerAnnotation: <Badge label="Fortune 500" icon={Trophy} color="amber" />,
             employerLogo: "/images/logo-dentalplans.webp",
-            dates: "October 2023 – Present",
+            startDate: "October 2023",
+            endDate: "Present",
             description: "Leading website development and optimization efforts to maximize conversions and serve our users.",
             impacts: [
                 {
@@ -45,7 +46,8 @@ export default function Experience() {
             employer: "Purple Turtle Creative",
             employerAnnotation: <Badge label="Bootstrapped" icon={Code} color="emerald" />,
             employerLogo: "/images/logo-purple-turtle-creative.png",
-            dates: "January 2020 – Present",
+            startDate: "January 2020",
+            endDate: "Present",
             description: "Single-handedly built a niche API WordPress plugin business from the ground up.",
             impacts: [
                 {
@@ -83,7 +85,8 @@ export default function Experience() {
             employer: "Hearst",
             employerAnnotation: <Badge label="Fortune Top 50" icon={Award} color="blue" />,
             employerLogo: "/images/logo-hearst.jpg",
-            dates: "July 2021 – July 2022",
+            startDate: "July 2021",
+            endDate: "July 2022",
             description: "Rapidly developed innovative digital marketing initiatives driving new revenue streams across multiple markets.",
             impacts: [
                 {
@@ -117,7 +120,8 @@ export default function Experience() {
             employer: "PETA",
             employerAnnotation: <Badge label="Global Nonprofit" icon={HeartHandshake} color="fuchsia" />,
             employerLogo: "/images/logo-peta.jpg",
-            dates: "August 2020 – July 2021",
+            startDate: "August 2020",
+            endDate: "July 2021",
             description: "Launched, supported, and optimized advocacy websites across 10 international regions.",
             impacts: [
                 // Source: https://www.peta.org/wp-content/uploads/2022/04/PETA-FY21-AFS.pdf
@@ -148,6 +152,43 @@ export default function Experience() {
                 "WordPress Plugin Development",
             ]
         },
+        {
+            role: "Full-Stack Web Developer",
+            employer: "Invision IT Group",
+            employerAnnotation: <Badge label="Web Agency" icon={Building} color="gray" />,
+            employerLogo: "/images/logo-invision-it-group.jpg",
+            startDate: "November 2017",
+            endDate: "January 2020",
+            description: "Developed membership website businesses, personalized marketing, and automated operations for clients.",
+            impacts: [
+                {
+                    icon: <Badge color="gray-dark" icon={BriefcaseBusiness} />,
+                    metric: "3-5",
+                    description: "Concurrent projects managed"
+                },
+                {
+                    icon: <Badge color="gray-dark" icon={Mail} />,
+                    metric: "100k+",
+                    description: "Avg. contact list size"
+                },
+                {
+                    icon: <Badge color="gray-dark" icon={UsersRound} />,
+                    metric: "20k+",
+                    description: "Avg. monthly active members"
+                },
+            ],
+            skills: [
+                "WooCommerce",
+                "WordPress",
+                "JavaScript",
+                "PHP",
+                "Membership Sites",
+                "WordPress Multisite",
+                "API Integration",
+                "Personalized Marketing",
+                "Responsive Web Design",
+            ]
+        },
     ];
 
     return (
@@ -157,8 +198,8 @@ export default function Experience() {
                 <p className="text-lg max-w-2xl mx-auto">With full-time work experiences at leading organizations, I know what it takes to operate at massive scale and consistently deliver results.</p>
                 <div className="space-y-6 my-8 text-left">
                     {
-                        experiences.map(job => (
-                            <div key={job.dates} className="bg-white border border-gray-200 p-5 rounded-xl">
+                        experiences.map((job, idx) => (
+                            <div key={idx} className="bg-white border border-gray-200 p-5 rounded-xl">
                                 <div className="flex flex-col sm:flex-row sm:flex-nowrap items-start justify-start gap-4 mb-4">
                                     <Image className="rounded-lg" src={job.employerLogo} alt="Company logo" width={64} height={64} />
                                     <div className="flex-1 text-left">
@@ -166,7 +207,9 @@ export default function Experience() {
                                             {job.role}
                                             {job.employerAnnotation}
                                         </h3>
-                                        <p className="text-sm text-gray-700">{`${job.employer} • ${job.dates}`}</p>
+                                        <p className="text-sm text-gray-700">
+                                            <span className="whitespace-nowrap">{job.employer} &bull;</span> <span className="whitespace-nowrap">{job.startDate} &mdash; {job.endDate}</span>
+                                        </p>
                                         <p className="mt-2 text-gray-700">{job.description}</p>
                                     </div>
                                     <div className="flex-1 ml-auto">

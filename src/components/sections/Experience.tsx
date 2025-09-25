@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AppWindow, Award, ChartNoAxesCombined, DollarSign, Eye, Handshake, HeartHandshake, Rocket, SearchCode, TrendingUp, Trophy, UsersRound } from "lucide-react";
+import { AppWindow, Award, ChartNoAxesCombined, Code, DollarSign, Eye, Handshake, HeartHandshake, Package, RefreshCw, Rocket, SearchCode, Sprout, TrendingUp, Trophy, UsersRound } from "lucide-react";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 
@@ -38,6 +38,44 @@ export default function Experience() {
                 "Performance Optimization",
                 "A/B Testing",
                 "Real User Monitoring (RUM)",
+            ]
+        },
+        {
+            role: "Founder, Lead Engineer",
+            employer: "Purple Turtle Creative",
+            employerAnnotation: <Badge label="Bootstrapped" icon={Code} color="emerald" />,
+            employerLogo: "/images/logo-purple-turtle-creative.png",
+            dates: "January 2020 – Present",
+            description: "Single-handedly built a niche API WordPress plugin business from the ground up.",
+            impacts: [
+                {
+                    icon: <Badge color="gray-dark" icon={Sprout} />,
+                    metric: "112%",
+                    description: "Revenue growth in 2nd year"
+                },
+                {
+                    icon: <Badge color="gray-dark" icon={RefreshCw} />,
+                    metric: "2.98x",
+                    description: "Revenue-to-expense ratio"
+                },
+                {
+                    icon: <Badge color="gray-dark" icon={Package} />,
+                    metric: "25+",
+                    description: "Plugins built and maintained"
+                },
+            ],
+            skills: [
+                "Product Engineering",
+                "React",
+                "API Integration",
+                "WordPress",
+                "Custom Analytics",
+                "Workflow Automation",
+                "DevOps",
+                "CI/CD",
+                "Documentation",
+                "Open Source",
+                "Business Administration",
             ]
         },
         {

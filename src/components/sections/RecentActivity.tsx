@@ -1,12 +1,15 @@
 import PostArticle from "@/components/ui/PostArticle";
 import PostToggle from "@/components/ui/PostToggle";
 import { getAllPosts, markdownStyledComponents } from "@/lib/posts";
+import { MoveRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { ReactNode } from "react";
 import Markdown from "react-markdown";
 
 export default function RecentActivity({ maxPosts, title, body } : { maxPosts?: number, title?: ReactNode, body?: ReactNode }) {
-    const posts = maxPosts ? getAllPosts().slice(0, maxPosts) : getAllPosts();
+    const allPosts = getAllPosts();
+    const posts = maxPosts ? allPosts.slice(0, maxPosts) : allPosts;
 
     const titleText = title || <>Recent Activity &amp; Impact</>;
     const bodyText = body || <>I&rsquo;m always shipping changes and measuring impact to strategize what&rsquo;s next.<br />Here&rsquo;s a few highlights from my recent projects.</>;
@@ -39,6 +42,29 @@ export default function RecentActivity({ maxPosts, title, body } : { maxPosts?: 
                         ))
                     }
                 </div>
+                {
+                    allPosts.length > posts.length && (
+                        <Link
+                            href="/feed"
+                            className="
+                                max-w-2xl
+                                mx-auto
+                                cursor-pointer
+                                inline-flex
+                                items-center
+                                justify-between
+                                gap-1
+                                text-sm
+                                font-medium
+                                text-blue-600
+                                hover:text-blue-800
+                            "
+                        >
+                            {`See all ${allPosts.length} posts`}
+                            <MoveRight />
+                        </Link>
+                    )
+                }
             </div>
         </div>
     )

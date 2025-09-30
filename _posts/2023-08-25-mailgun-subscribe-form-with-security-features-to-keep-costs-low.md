@@ -3,7 +3,7 @@ title: "Mailgun Subscribe Form with Security Features to Limit Costs"
 slug: "mailgun-subscribe-form-with-security-features-to-keep-costs-low"
 ---
 
-While Twitter was becoming X and Meta was releasing Threads, Purple Turtle Creative decided to offer a reliable, platform-independent way to keep interested users informed: good ol’ fashioned email. Purple Turtle Creative is a bootstrapped business that keeps costs low by foregoing expensive CRM service subscriptions, though. This meant that I needed to implement a re-usable mailing list subscription form by using our API-based email service provider, Mailgun.
+While Twitter was becoming X and Meta was releasing Threads, Purple Turtle Creative decided to offer a reliable, platform-independent way to keep interested users informed: good ol’ fashioned email. Purple Turtle Creative is a bootstrapped business that keeps costs low by foregoing expensive CRM service subscriptions, though. This meant that I needed to implement a reusable mailing list subscription form by using our API-based email service provider, Mailgun.
 
 Since Mailgun uses volume-based pricing, security was a top priority for the mailing list subscription forms to protect Purple Turtle Creative from exorbitant surprise fees. As the first layer of protection, I implemented [Cloudflare’s new CAPTCHA solution called Turnstile](https://www.cloudflare.com/products/turnstile/) on the client side. An advanced bot might still slip through, though, and humans sometimes make mistakes. That’s why I also decided to implement a double opt-in process to ensure the integrity of the mailing list and protect Purple Turtle Creative’s sender reputation.
 

@@ -2,8 +2,6 @@
 title: "Microsite WordPress Gutenberg Theme with ACF-Powered Custom Blocks"
 slug: "microsite-wordpress-gutenberg-theme-with-acf-powered-custom-blocks"
 images:
-   - src: "/images/portfolio/purpleturtlecreative/home.png"
-     caption: "Homepage"
    - src: "/images/portfolio/peta-de-veganstart/1.png"
      caption: "landing hero"
    - src: "/images/portfolio/peta-de-veganstart/2.png"

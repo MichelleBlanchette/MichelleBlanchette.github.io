@@ -5,6 +5,27 @@ import { Components } from "react-markdown";
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 export const markdownStyledComponents = {
+    a: ({node, ...props}) => {
+        const newProps = { ...props };
+        if ( newProps.href && "string" === typeof newProps.href ) {
+            newProps.href = newProps.href.replace("http://", "https://"); // Force secure links.
+            if (
+                newProps.href.startsWith("https://") &&
+                ! (
+                    // Allowlist.
+                    newProps.href.startsWith("https://purpleturtlecreative.com/") ||
+                    newProps.href.startsWith("https://www.purpleturtlecreative.com/") ||
+                    newProps.href.startsWith("https://www.linkedin.com/in/michelle-blanchette/") ||
+                    newProps.href.startsWith("https://github.com/MichelleBlanchette")
+                )
+            ) {
+                newProps.target = '_blank';
+                newProps.rel = 'noopener noreferrer nofollow';
+            }
+        }
+
+        return <a className="text-blue-600 hover:text-blue-800 underline underline-offset-2" {...newProps} />;
+    },
     p: ({node, ...props}) => <p className="mb-4" {...props} />,
     ul: ({node, ...props}) => <ul className="list-disc list-inside mb-4" {...props} />,
     li: ({node, ...props}) => <li className="mb-1" {...props} />,

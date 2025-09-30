@@ -2,7 +2,7 @@ import type { LucideIcon } from "lucide-react";
 
 const colorClasses = {
     "gray-dark": "bg-gray-300 text-gray-900 border-gray-400",
-    "gray": "bg-gray-100 text-gray-800 border-gray-200",
+    "gray": "bg-gray-100 text-gray-800 border-gray-300",
     "violet": "bg-violet-100 text-violet-800 border-violet-200",
     "fuchsia": "bg-fuchsia-100 text-fuchsia-800 border-fuchsia-200",
     "emerald": "bg-emerald-100 text-emerald-800 border-emerald-200",

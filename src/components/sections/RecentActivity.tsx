@@ -31,7 +31,7 @@ export default function RecentActivity({ maxPosts, title, body } : { maxPosts?: 
                                     post?.short ?
                                     (<>
                                         <Markdown components={markdownStyledComponents}>{post.short}</Markdown>
-                                        <PostToggle renderedPost={<PostArticle post={post} />} />
+                                        <PostToggle post={post} renderedPost={<PostArticle post={post} />} />
                                     </>) :
                                     <PostArticle post={post} />
                                 }

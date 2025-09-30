@@ -11,7 +11,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Testimonials />
-      <RecentActivity />
+      <RecentActivity maxPosts={8} />
     </main>
   );
 }

@@ -1,6 +1,16 @@
 import * as matter from 'gray-matter';
 import * as fs from 'fs';
 import * as path from 'path';
+import { Components } from "react-markdown";
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+export const markdownStyledComponents = {
+    p: ({node, ...props}) => <p className="mb-4" {...props} />,
+    ul: ({node, ...props}) => <ul className="list-disc list-inside mb-4" {...props} />,
+    li: ({node, ...props}) => <li className="mb-1" {...props} />,
+    code: ({node, ...props}) => <code className="bg-gray-200 rounded px-1.5 py-0.5 font-mono text-sm" {...props} />,
+} as Components;
+/* eslint-enable @typescript-eslint/no-unused-vars */
 
 // Define the structure of a blog post.
 
@@ -9,7 +19,7 @@ type FeaturedImage = {
     caption: string; // Caption text for the image.
 }
 
-type Post = {
+export type Post = {
     id: number; // Unique identifier for the post.
     date: string; // Published date formatted for display.
     short: string; // Twitter-like organic short relating to the post.
@@ -35,18 +45,21 @@ export function getAllPosts(): Post[] {
         const { data, content } = matter.read(filePath);
 
         const dateString = filePath.match(/\d{4}-\d{2}-\d{2}/);
-        if (!dateString) {
+        if ( ! dateString ) {
             throw new Error(`Filename ${fileName} does not contain a valid date.`);
         }
 
         const publishDate = new Date(`${dateString[0]}T12:00:00Z`); // Using noon UTC to avoid timezone issues.
-        if (isNaN(publishDate.getTime())) {
+        if ( isNaN(publishDate.getTime()) ) {
             throw new Error(`Invalid date in filename ${fileName}.`);
         }
 
         // Ensure required fields are present.
-        if (!data.title) {
-            throw new Error(`Missing required front matter in file ${fileName}.`);
+        if ( ! data.title ) {
+            throw new Error(`Missing required front matter [title] in file ${fileName}.`);
+        }
+        if ( ! content ) {
+            throw new Error(`Missing required content in file ${fileName}.`);
         }
 
         return {

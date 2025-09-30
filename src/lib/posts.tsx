@@ -27,7 +27,7 @@ export const markdownStyledComponents = {
         return <a className="text-blue-600 hover:text-blue-800 underline underline-offset-2" {...newProps} />;
     },
     p: ({node, ...props}) => <p className="mb-4" {...props} />,
-    ul: ({node, ...props}) => <ul className="list-disc list-inside mb-4" {...props} />,
+    ul: ({node, ...props}) => <ul className="list-disc list-outside mb-4 ml-5 pl-5" {...props} />,
     li: ({node, ...props}) => <li className="mb-1" {...props} />,
     code: ({node, ...props}) => <code className="bg-gray-200 rounded px-1.5 py-0.5 font-mono text-sm" {...props} />,
 } as Components;

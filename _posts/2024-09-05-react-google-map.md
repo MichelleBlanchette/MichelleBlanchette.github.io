@@ -1,5 +1,6 @@
 ---
 title: "Stabilized Google Map UX & Reduced API Usage with Memoized Rendering"
+short: "Memoization in React is so fun—especially when it results in a **buttery smooth experience.** 😎"
 images:
    - src: "/images/portfolio/dentalplans/dentist-search-results.png"
      caption: "Dentist search application on DentalPlans.com"

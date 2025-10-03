@@ -1,6 +1,6 @@
 ---
 title: "Boosted SEO Crawl Efficiency by 85%+ with Improved HTML Crawling"
-short: "Yikes! 😬 3 months ago, I noticed **40% of SEO crawl requests were being wasted** on irrelevant API calls. After my fix, the remaining necessary calls are now just a mere 1.8% with valuable crawls surging beyond 85%! 🥳"
+short: "After 3 months of monitoring, I can now confidently conclude that I successfully **boosted SEO crawl requests from 45.4% to 83.9%**—and it continues to improve even further!"
 ---
 
 While reviewing crawl reports across DentalPlans.com properties, I noticed an alarming split: **only 45.4% of crawl activity was spent on HTML**, while 40.6% was consumed by JSON API endpoints. Since the marketing site is primarily server-rendered and optimized for SEO, this misallocation was a clear drain on crawl budget and search engine visibility.

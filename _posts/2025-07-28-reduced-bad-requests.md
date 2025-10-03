@@ -1,11 +1,6 @@
 ---
 title: "Reduced First-Party API Errors by 75.6% After Implementing Pre-Request Validation"
-short: |
-   Error handling does much more than simply provide a polished UX for users! 📢
-
-   Bots tirelessly bombard most web applications with malicious requests. This can lead to sudden unexpected API service costs or infrastructure instability. 💸
-
-   That's why I implemented pre-request validation when proxying requests to an in-house API and **immediately achieved a 75.6% error rate reduction.** ⛔️
+short: "My pre-request validation for proxied requests to an in-house API **immediately achieved a 75.6% error rate reduction.** ✋👮‍♀️"
 images:
    - src: "/images/portfolio/dentalplans/savings-calculator-results.png"
      caption: "Savings calculator results success"

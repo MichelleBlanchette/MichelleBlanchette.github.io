@@ -1,6 +1,6 @@
 ---
 title: "Cut First Contentful Paint by 45% with Targeted Script Load Optimizations"
-short: "My loading strategy optimizations of first-party scripts **improved Largest Contentful Paint (LCP) by 65%, First Contentful Paint (FCP) by 45%, and Cumulative Layout Shift (CLS) by 83%.** 🏎️💨"
+short: "My **loading strategy optimizations** of first-party scripts improved Largest Contentful Paint (LCP) by 65%, First Contentful Paint (FCP) by 45%, and Cumulative Layout Shift (CLS) by 83%. 🏎️💨"
 ---
 
 After auditing frontend performance on DentalPlans.com, I discovered that several first-party scripts were unnecessarily blocking rendering. These scripts were loaded too early, had tangled dependency chains, and weren’t leveraging modern load strategies like `defer`.

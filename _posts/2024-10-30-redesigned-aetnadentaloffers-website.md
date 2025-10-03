@@ -1,7 +1,7 @@
 ---
 title: "Doubled Conversion Rate with 2x Faster Page Loads in Site Redesign"
 short: |
-   So excited to have launched the new AetnaDentalOffers.com website! 💜
+   So excited to have launched the new [AetnaDentalOffers.com](https://www.aetnadentaloffers.com/) website! 💜
 
    With improved brand consistency, user experience, and 2x faster load times, this site is now **consistently performing at 2x its previous conversion rate!** 📈
 images:

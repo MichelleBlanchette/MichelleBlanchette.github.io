@@ -1,5 +1,6 @@
 ---
 title: "Replaced Manual Release Process with 90% Faster Automated Workflow"
+short: "I automated my team's releases, and **now other engineering teams are copying** the exact same workflow! The entire business is loving the streamlined communications, and we're enjoying how effortless it is!"
 ---
 
 Website deployments at DentalPlans.com used to require 30 minutes of manual prep: developers had to sift through recent Git commits, extract Jira ticket IDs, manually format a list of changes, and send it in an internal release email. The process was slow, error-prone, and often led to inconsistent communication across teams.

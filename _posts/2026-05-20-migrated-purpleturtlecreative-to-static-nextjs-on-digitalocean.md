@@ -1,17 +1,13 @@
 ---
-title: "Migrated Purple Turtle Creative to a Static Next.js Site on DigitalOcean"
-short: "I replaced our heavyweight WordPress marketing stack with a **static Next.js export** on DigitalOcean App Platform—faster builds, simpler hosting, and routing that just works."
+title: "Eliminated Hosting Costs for Purple Turtle Creative"
+short: "I replaced my business's WordPress marketing site with a static Next.js site on DigitalOcean App Platform. **$0/month hosting**, no servers to babysit, and none of the plugin-update treadmill!"
 images:
-   - src: "/images/portfolio/purpleturtlecreative/home.png"
-     caption: "New marketing homepage"
-   - src: "/images/portfolio/purpleturtlecreative/footer.png"
-     caption: "Footer with business details"
+   - src: "/images/portfolio/purpleturtlecreative/home-nextjs.png"
+     caption: "New static site homepage"
 ---
 
-Purple Turtle Creative’s public site had outgrown its WordPress theme: plugin updates, hosting quirks, and a custom post type we no longer used were adding maintenance overhead without helping clients.
+Purple Turtle Creative’s public site was still running on WordPress long after that stack stopped earning its keep. Monthly hosting bills, security patches, plugin updates, and an untouched CMS were pure overhead for a marketing site that rarely changed.
 
-I rebuilt the marketing site as a **static Next.js application** (`output: "export"`) deployed on **DigitalOcean App Platform**, merging the work in [PurpleTurtleCreative/website PR #24](https://github.com/PurpleTurtleCreative/website/pull/24). TailwindCSS carries the brand forward, and the App Platform serves pre-rendered HTML without a PHP runtime.
+So I rebuilt [purpleturtlecreative.com](https://purpleturtlecreative.com/) as a static site and hosted it in a way that costs nothing to keep online. No PHP runtime, no database, and no WordPress maintenance chores.
 
-Static hosting exposed a few sharp edges—especially **deep links 404ing** until I aligned Next.js `trailingSlash` output with DigitalOcean’s directory routing. Once that was in place, custom routes and internal links behaved consistently in every environment.
-
-The new stack is easier to ship, cheaper to operate, and a better foundation for the authenticated **client portal** I layered on next—all without sacrificing the polished marketing experience Purple Turtle Creative clients expect.
+The result is exactly what I wanted for a bootstrapped business: a polished marketing presence with **zero ongoing hosting cost** and effortless management. That freed me up to spend time where it actually matters—like the authenticated client portal that came next—instead of keeping a server healthy for a brochure site.
